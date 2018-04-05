@@ -1,0 +1,48 @@
+#+TITLE: Nifty Emacs Org-mode
+#+AUTHOR: David Florness
+#+OPTIONS: toc:nil
+
+* Headlines
+  #+BEGIN_SRC org
+    ,* Top level headline
+    ,** Second level
+    ,*** 3rd level
+        some text
+    ,*** 3rd level
+        more text
+  #+END_SRC
+* Tables
+  #+BEGIN_SRC org
+    | Student | ID | Grade |
+    |---------+----+-------|
+    | Alice   |  3 | A     |
+    | Bob     |  2 | B     |
+    | Chell   |  1 | C     |
+  #+END_SRC
+* Hyperlinks
+  #+BEGIN_SRC org
+    [[https://duckduckgo.com][DuckDuckGo]]
+  #+END_SRC
+* TODOs, tags, and deadlines
+  #+BEGIN_SRC org
+    ,* TODO Finish talk on Org-mode                                      :general:
+      DEADLINE: <2018-04-05 Thu 18:00>
+  #+END_SRC
+* Source code evaluation
+  #+BEGIN_SRC org
+    ,#+BEGIN_SRC python :results output :seesion
+      def factorial(n):
+          if n == 0:
+              return 1
+          else:
+              return n * factorial(n - 1)
+
+      print('Hello world!')
+      print(factorial(5))
+    ,#+END_SRC
+
+    ,#+RESULTS:
+    : Hello world!
+    : 120
+  #+END_SRC
+
