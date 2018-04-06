@@ -1,0 +1,77 @@
+#+TITLE: Nifty Emacs Org-mode
+#+AUTHOR: David Florness
+#+OPTIONS: toc:nil
+
+* What is Org-mode?
+  An extension to the Emacs text editor that helps with note-taking, formatting,
+  and organization.
+  
+  Originally created by the astronomer Carsten Dominik in 2003, originally to
+  organize his own life and work.
+
+  #+ATTR_LATEX: :width 4.5cm
+  [[./carsten-dominik.jpg]]
+* Headlines
+** Top level headline
+*** Second level
+**** 3rd level
+     some text
+**** 3rd level
+     more text
+* Lists
+** Unordered
+   - Apple
+   - Banana
+   - Grape
+** Ordered
+   1. First
+   2. Second
+   3. Third
+* Tables
+  | Character       | Game           | First Appeared |
+  |-----------------+----------------+----------------|
+  | Gordon Freeman  | Half-Life      |           1998 |
+  | Chell           | Portal         |           2007 |
+  | Adrian Shephard | Opposing Force |           1999 |
+* Hyperlinks
+  [[https://duckduckgo.com][DuckDuckGo]]
+  [[https://www.gnu.org/software/emacs/][Emacs' Homepage]]
+* Todos, tags, and deadlines
+** TODO Finish talk on Org-mode                                     :general:
+   DEADLINE: <2018-04-05 Thu 18:00>
+* Source code evaluation
+  #+BEGIN_SRC python :results output :seesion
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n - 1)
+
+    print('Hello world!')
+    print(factorial(5))
+  #+END_SRC
+
+  #+RESULTS:
+  : Hello world!
+  : 120
+
+* Copying
+  :PROPERTIES:
+  :COPYING:  t
+  :END:
+
+  #+BEGIN_SRC text
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+                        Version 2, December 2004 
+
+     Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
+
+     Everyone is permitted to copy and distribute verbatim or modified 
+     copies of this license document, and changing it is allowed as long 
+     as the name is changed. 
+
+                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+       TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+
+      0. You just DO WHAT THE FUCK YOU WANT TO.
+  #+END_SRC
